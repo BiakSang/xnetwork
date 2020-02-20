@@ -1,0 +1,785 @@
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+main {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    padding: 5% 0;
+}
+
+#today {
+    display: block;
+    width: 86%;
+    padding-left: 250px;
+    position: relative;
+    margin: 0 auto 10% auto;
+}
+
+#location {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 35px;
+    font-size: 25px;
+    text-align: left;
+    color: #555;
+    font-family: Poppins-Medium, sans-serif;
+    font-weight: 600;
+}
+
+.night #location {
+    color: #ddd;
+}
+
+#date {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: left;
+    color: #555;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.night #date {
+    color: #ddd;
+}
+
+#today-icon {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+}
+
+#temperature {
+    display: block;
+    width: 100%;
+    font-size: 0;
+    margin-bottom: 20px;
+}
+
+#temperature h1 {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 70px;
+    font-size: 60px;
+    font-family: Poppins-ExtraBold, sans-serif;
+    font-weight: bolder;
+    color: indianred;
+}
+
+.night #temperature h1 {
+    color: skyblue;
+}
+
+#temperature p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+    color: indianred;
+    margin-left: 20px;
+}
+
+.night #temperature p {
+    color: skyblue;
+}
+
+#temperature span {
+    display: block;
+    width: 100%;
+    line-height: 15px;
+    font-size: 12px;
+    font-family: Poppins-Light, sans-serif;
+    color: #777;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.night #temperature span {
+    color: #ddd;
+}
+
+#temperature span a {
+    color: #444;
+}
+
+.night #temperature span a {
+    color: skyblue;
+}
+
+#more-info {
+    display: block;
+    width: 100%;
+    font-size: 0;
+    margin-bottom: 50px;
+}
+
+#more-info p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+#more-info img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#more-info strong {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 25px;
+    font-size: 14px;
+    font-family: Poppins-Medium, sans-serif;
+    font-weight: medium;
+    color: #555;
+}
+
+.night #more-info strong {
+    color: #ddd;
+}
+
+#more-info span {
+    display: block;
+    width: 100%;
+    padding-left: 35px;
+    line-height: 14px;
+    font-size: 12px;
+    font-family: Poppins-Light, sans-serif;
+    font-weight: lighter;
+    color: #555;
+}
+
+.night #more-info span {
+    color: #ddd;
+}
+
+#summary {
+    display: block;
+    width: 100%;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: Poppins-Medium, sans-serif;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+.night #summary {
+    color: #ddd;
+}
+
+@media only screen and (max-width: 1200px){
+    
+    #today {
+        width: 100%;
+        padding: 0 40px 0 290px;
+    }
+    
+    #today-icon {
+        left: 45px;
+    }
+    
+    #temperature {
+        margin-bottom: 40px;
+    }
+    
+    #more-info {
+        margin-bottom: 40px;
+    }
+    
+    #more-info p {
+        width: 200px;
+        margin: 0 0 20px 0;
+        text-align: left;
+    }
+    
+    @media only screen and (max-width: 1000px){
+        
+        main {
+            margin-top: 80px;
+        }
+        
+        #today {
+            padding: 0 40px;
+            margin-bottom: 10%;
+            padding-bottom: 10%;
+            border-bottom: 1px dotted #ddd;
+        }
+        
+        .night #today {
+            border-bottom: 1px dotted #333;
+        }
+        
+        #date {
+            margin-bottom: 0;
+        }
+        
+        #today-icon {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 40px 0;
+        }
+        
+        #more-info p {
+            width: 33.333333333%;
+        }
+        
+        @media only screen and (max-width: 700px){
+            
+            main {
+                margin-top: 60px;
+                padding: 40px 0;
+            }
+            
+            #today {
+                padding: 0 20px 10% 20px;
+            }
+            
+            #location {
+                text-align: center;
+                line-height: 30px;
+                font-size: 20px;
+            }
+            
+            #date {
+                text-align: center;
+                line-height: 18px;
+                font-size: 14px;
+            }
+            
+            #today-icon {
+                margin: 30px auto;
+            }
+            
+            #temperature h1 {
+                display: block;
+                width: 100%;
+                margin: 0;
+                line-height: 50px;
+                font-size: 40px;
+                text-align: center;
+            }
+            
+            #temperature p {
+                display: block;
+                width: 100%;
+                text-align: center;
+                line-height: 25px;
+                margin: 0;
+            }
+            
+            #temperature span {
+                line-height: 20px;
+                font-size: 10px;
+                text-align: center;
+            }
+            
+            #more-info p {
+                position: relative;
+            }
+            
+            #more-info strong {
+                width: 60%;
+                margin-left: 40%;
+                text-align: left;
+            }
+            
+            #more-info img {
+                position: absolute;
+                width: auto;
+                height: 100%;
+                padding: 4px;
+                right: 60%;
+            }
+            
+            #more-info span {
+                width: 60%;
+                margin-left: 40%;
+                padding: 0;
+                text-align: left;
+            }
+            
+            #summary {
+                text-align: center;
+                line-height: 30px;
+                font-size: 20px;
+            }
+            
+            @media only screen and (max-width: 500px){
+                
+                main {
+                    padding: 30px 0;
+                }
+                
+                #location {
+                    line-height: 25px;
+                    font-size: 16px;
+                }
+                
+                #date {
+                    line-height: 16px;
+                    font-size: 12px;
+                }
+                
+                #today-icon {
+                    margin: 30px auto;
+                }
+                
+                #temperature h1 {
+                    line-height: 35px;
+                    font-size: 30px;
+                }
+                
+                #temperature p {
+                    line-height: 20px;
+                    font-size: 15px;
+                }
+                
+                #more-info p {
+                    width: 50%;
+                }
+                
+                #more-info img {
+                    width: 20%;
+                    right: 60%;
+                    padding: 5px;
+                }
+                
+                #more-info strong {
+                    width: 60%;
+                    margin-left: 40%;
+                    font-size: 12px;
+                }
+                
+                #more-info span {
+                    width: 60%;
+                    margin-left: 40%;
+                    font-size: 10px;
+                }
+                
+                #summary {
+                    line-height: 25px;
+                    font-size: 16px;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+/******************************************/
+
+#hourly-forecast {
+    display: block;
+    width: 100%;
+    margin-bottom: 10%
+}
+
+#hourly-forecast h1 {
+    display: block;
+    width: 100%;
+    line-height: 35px;
+    font-size: 25px;
+    padding: 0 7%;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+    color: #555;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.night #hourly-forecast h1 {
+    color: #ddd;
+}
+
+#hourly-forecast section {
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+}
+
+#hf-graph {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: skyblue;
+    background: linear-gradient(to bottom, aliceblue, skyblue, blueviolet);
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.night #hf-graph {
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+#hf-graph .top-fill {
+    fill: aliceblue;
+}
+
+.night #hf-graph .top-fill {
+    fill: #222;
+}
+
+#hf-graph .graph-line {
+    stroke: indianred;
+    stroke-width: .2;
+    fill: none;
+}
+
+.night #hf-graph .graph-line {
+    stroke: #fff;
+}
+
+#hf-graph .point {
+    fill: indianred;
+}
+
+.night #hf-graph .point {
+    fill: #fff;
+}
+
+#hf-graph .temp {
+    fill: indianred;
+    font-size: 1.5px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+}
+
+.night #hf-graph .temp {
+    fill: #fff;
+}
+
+#hf-graph .line {
+    stroke: skyblue;
+    stroke-width: .05;
+}
+
+#hf-graph .summary {
+    fill: skyblue;
+    font-size: 1.1px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+}
+
+#hf-graph .time {
+    fill: #fff;
+    font-size: 1.3px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 1500px){
+    
+    #hf-graph {
+        width: 150%;
+    }
+    
+    @media only screen and (max-width: 1200px){
+        
+        #hourly-forecast h1 {
+            padding: 0 40px;
+        }
+        
+        #hourly-forecast section {
+            width: 100%;
+            padding: 0 40px;
+        }
+        
+        @media only screen and (max-width: 1000px){
+            
+            #hourly-forecast section::-webkit-scrollbar {
+                height: 0;
+            }
+            
+            #hf-graph {
+                width: 200%;
+            }
+            
+            @media only screen and (max-width: 700px){
+                
+                #hourly-forecast h1 {
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 20px;
+                    padding: 0 20px;
+                }
+                
+                #hourly-forecast section {
+                    padding: 0 20px;
+                }
+                
+                #hf-graph {
+                    width: 300%;
+                }
+                
+                @media only screen and (max-width: 500px){
+                    
+                    #hourly-forecast {
+                        margin-bottom: 20%;
+                    }
+                    
+                    #hourly-forecast h1 {
+                        line-height: 25px;
+                        font-size: 16px;
+                    }
+                    
+                    #hf-graph {
+                        width: 500%;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+/*************************************************/
+
+#daily-forecast {
+    display: block;
+    width: 100%;
+}
+
+#daily-forecast h1 {
+    display: block;
+    width: 100%;
+    line-height: 35px;
+    font-size: 25px;
+    padding: 0 7%;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+    color: #555;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.night #daily-forecast h1 {
+    color: #ddd;
+}
+
+#daily-forecast section {
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+}
+
+#df-graph {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: skyblue;
+    background: linear-gradient(to bottom, aliceblue, skyblue, blueviolet);
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.night #df-graph {
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+#df-graph .top-fill {
+    fill: aliceblue;
+}
+
+.night #df-graph .top-fill {
+    fill: #222;
+}
+
+#df-graph .graph-line {
+    stroke: indianred;
+    stroke-width: .1;
+    fill: none;
+}
+
+.night #df-graph .graph-line {
+    stroke: #fff;
+}
+
+#df-graph .point {
+    fill: indianred;
+}
+
+.night #df-graph .point {
+    fill: #fff;
+}
+
+#df-graph .temp {
+    fill: indianred;
+    font-size: 1px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+}
+
+.night #df-graph .temp {
+    fill: #fff;
+}
+
+#df-graph .line {
+    stroke: #ddd;
+    stroke-width: .04;
+}
+
+#df-graph .summary {
+    fill: skyblue;
+    font-size: .7px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+}
+
+#df-graph .time {
+    fill: #fff;
+    font-size: 1px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 1200px){
+    
+    #daily-forecast h1 {
+        padding: 0 40px;
+    }
+    
+    #daily-forecast section {
+        width: 100%;
+        padding: 0 40px;
+    }
+    
+    @media only screen and (max-width: 1000px){
+        
+        #df-graph {
+            width: 150%;
+        }
+        
+        #daily-forecast section::-webkit-scrollbar {
+            height: 0;
+        }
+        
+        @media only screen and (max-width: 700px){
+            
+            #daily-forecast h1 {
+                text-align: center;
+                line-height: 30px;
+                font-size: 20px;
+                padding: 0 20px;
+            }
+            
+            #daily-forecast section {
+                padding: 0 20px;
+            }
+            
+            #df-graph {
+                width: 200%;
+            }
+            
+            @media only screen and (max-width: 500px){
+                
+                #daily-forecast h1 {
+                    line-height: 25px;
+                    font-size: 16px;
+                }
+                
+                #df-graph {
+                    width: 300%;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

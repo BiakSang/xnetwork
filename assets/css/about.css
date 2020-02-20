@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+/*****************************************************/
+
+main {
+    display: block;
+    width: 1000px;
+    min-height: 540px;
+    margin: 100px auto 0 auto;
+    padding: 50px 0 50px 240px;
+    position: relative;
+}
+
+main section {
+    display: block;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+main section img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px -3px rgba(0,0,0,.9);
+    transform-origin: center;
+    transition: .1s linear;
+}
+
+main section img:hover {
+    transform: scale(1.05);
+}
+
+main h1 {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Poppins-ExtraBold, sans-serif;
+    color: indianred;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.night main h1 {
+    color: #ddd;
+}
+
+main p {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Poppins-Light, sans-serif;
+    color: #444;
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+main p a {
+    color: blueviolet;
+}
+
+.night main p {
+    color: #bbb;
+}
+
+.night main p a {
+    color: skyblue;
+}
+
+main h2 {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Poppins-ExtraBold, sans-serif;
+    color: indianred;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.night main h2 {
+    color: #ddd;
+}
+
+@media only screen and (max-width: 1080px){
+    
+    main {
+        width: 100%;
+        padding: 50px 40px 50px 280px;
+    }
+    
+    main section {
+        left: 40px;
+    }
+    
+    @media only screen and (max-width: 1000px){
+        
+        main {
+            margin-top: 80px;
+        }
+        
+        main h1 {
+            font-size: 30px;
+        }
+        
+        main p {
+            font-size: 16px;
+        }
+        
+        main h2 {
+            font-size: 20px;
+        }
+        
+        @media only screen and (max-width: 700px){
+            
+            main {
+                width: 400px;
+                min-height: 200px;
+                margin: 60px auto 0 auto;
+                padding: 50px 0;
+            }
+            
+            main section {
+                width: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+                font-size: 0;
+                text-align: left;
+                margin-bottom: 40px;
+            }
+            
+            main section img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 100px;
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            
+            @media only screen and (max-width: 500px){
+                
+                main {
+                    width: 100%;
+                    padding: 50px 30px;
+                }
+                
+                main section img {
+                    width: 70px;
+                    margin-right: 10px;
+                }
+                
+                main h1 {
+                    line-height: 30px;
+                    font-size: 25px;
+                }
+                
+                main p {
+                    line-height: 25px;
+                    font-size: 14px;
+                }
+                
+                main h2 {
+                    line-height: 25px;
+                    font-size: 18px;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
