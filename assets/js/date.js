@@ -1,6 +1,6 @@
 let date = {
     dateNumber: () => {
-        const dn = new Date().getDate();
+        let dn = new Date().getDate();
         if (dn < 10){
             dn = `0{dn}`;
         }
