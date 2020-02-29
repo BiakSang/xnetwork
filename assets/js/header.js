@@ -16,7 +16,7 @@ let header = {
         }
         else {
             const hour = new Date().getHours();
-            if (hour < 17 && hour > 4){
+            if (hour < 17 && hour > 5){
                 $("body").attr("class", "day");
             }
             else {

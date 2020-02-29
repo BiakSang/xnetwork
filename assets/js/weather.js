@@ -218,7 +218,7 @@ const weather = {
             const t = tempIAS(data[i].temperature);
             const y = (g - t) + 10;
             if (i === 0){
-                firstPoint = `T0,${y}`;
+                firstPoint = `L0,${y}`;
                 graphLine += `M0,${y} `;
             }
             else if (i === 1){
@@ -233,7 +233,7 @@ const weather = {
         }
         $("#hf-graph .graph-line").attr("d", graphLine);
         
-        const topFill = `${graphLine} T170,0 T0,0 ${firstPoint}`;
+        const topFill = `${graphLine} L170,0 L0,0 ${firstPoint}`;
         $("#hf-graph .top-fill").attr("d", topFill);
         
         const point = '<circle class="point" cx="LEFT" cy="TOP" r=".4" />';
@@ -386,7 +386,7 @@ const weather = {
             const t = tempIAS(data[i].temperatureMin, data[i].temperatureMax);
             const y = (g - t) + 5;
             if (i === 0){
-                firstPoint = `T0,${y}`;
+                firstPoint = `L0,${y}`;
                 graphLine += `M0,${y} `;
             }
             else if (i === 1){
@@ -401,7 +401,7 @@ const weather = {
         }
         $("#df-graph .graph-line").attr("d", graphLine);
         
-        const topFill = `${graphLine} T80,0 T0,0 ${firstPoint}`;
+        const topFill = `${graphLine} L80,0 L0,0 ${firstPoint}`;
         $("#df-graph .top-fill").attr("d", topFill);
         
         const point = '<circle class="point" cx="LEFT" cy="TOP" r=".27" />';
