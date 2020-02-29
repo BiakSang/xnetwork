@@ -81,7 +81,7 @@ const weather = {
             }
         }
         
-        const darkSky = `https://corsanywhere.herokuapp.com/https://api.darksky.net/forecast/7bd23d403e170a31c344b7d9e629e97a/${lat},${lng}`;
+        const darkSky = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/7bd23d403e170a31c344b7d9e629e97a/${lat},${lng}`;
         const locationIQ = `https://eu1.locationiq.com/v1/reverse.php?key=fb31d5caa33bcc&lat=${lat}&lon=${lng}&format=json`;
         
         $.get(darkSky, res => {
