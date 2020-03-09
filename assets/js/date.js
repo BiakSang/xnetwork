@@ -2,7 +2,7 @@ let date = {
     dateNumber: () => {
         let dn = new Date().getDate();
         if (dn < 10){
-            dn = `0{dn}`;
+            dn = `0${dn}`;
         }
         return dn;
     },
